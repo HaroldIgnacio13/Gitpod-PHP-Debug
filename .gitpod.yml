@@ -1,5 +1,13 @@
+tasks:
+  - name: try
+    command: gp open test.php
+
 image:
   file: .gitpod.Dockerfile
+
+ports:
+  - port: 3300
+    onOpen: open-preview
 
 vscode:
   extensions:
