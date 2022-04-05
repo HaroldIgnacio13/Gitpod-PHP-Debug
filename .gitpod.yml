@@ -5,10 +5,6 @@ ports:
   - port: 8080
     onOpen: open-browser
 
-tasks:
-  - init: composer update
-    command: php -S 0.0.0.0:8080 -t public/
-
 vscode:
   extensions:
     - felixfbecker.php-debug@1.13.0
