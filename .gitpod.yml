@@ -2,12 +2,12 @@ image:
   file: .gitpod.Dockerfile
 
 ports:
-  - port: 8000
-    onOpen: ignore
+  - port: 8080
+    onOpen: open-browser
 
 tasks:
   - init: composer update
-    command: php -S 0.0.0.0:8000 -t public/
+    command: php -S 0.0.0.0:8080 -t public/
 
 vscode:
   extensions:
